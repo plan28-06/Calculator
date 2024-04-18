@@ -54,6 +54,7 @@ button{
     border-radius: 5px;
     width: 100px;
     flex-grow: 1;
+    border: 1px solid black;
 }
 
 .AC,.zero{
