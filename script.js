@@ -9,7 +9,7 @@ let first_operand=''
 let second_operand=''
 let operation=''
 let result;
-
+// Add
 function add(a,b){
     result= parseFloat(a)+parseFloat(b);
     first_operand=result
@@ -17,7 +17,7 @@ function add(a,b){
     operation=''
     return Math.round(result * 1000)/1000
 }
-
+// Subtract
 function sub(a,b){
     
     result = parseFloat(a)-parseFloat(b);
@@ -26,7 +26,7 @@ function sub(a,b){
     operation=''
     return Math.round(result * 1000)/1000
 }
-
+// Multiply
 function multiply(a,b){
     result = (parseFloat(a))*(parseFloat(b));
     first_operand=result
@@ -34,7 +34,7 @@ function multiply(a,b){
     operation=''
     return Math.round(result * 1000)/1000
 }
-
+// Divide
 function div(a,b){
     if (b==='0'){
         result ='nah';
@@ -74,7 +74,6 @@ function operate(){
         return;
     }
 }
-
 
 // Function for inputting numbers
 
@@ -121,7 +120,10 @@ function delCharFn(){
 // Function for period
 
 function dotFn(){
-    if (operation === ''){
+    if (display.textContent.includes('.')){
+        return;
+    }
+    else if (operation === ''){
         first_operand+=this.textContent
         display.textContent=first_operand
     }
@@ -152,7 +154,7 @@ for (let operator of operators){
         else if (second_operand === ''){ 
             display.textContent=first_operand;
             operation=this.textContent;
-        }
+        }   
         else{
             operate();
             operation=this.textContent;
@@ -161,3 +163,4 @@ for (let operator of operators){
 }
 
 equal.addEventListener('click',operate)
+
