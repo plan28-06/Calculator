@@ -65,22 +65,32 @@ button{
     background-color: #238082;
 }
 
-.operator{
+.digit:active{
+    background-color: #6c8f8f;
+}
+
+
+.equalto{
     background-color:#be6812;
+}
+
+.equalto:active{
+    background-color: #ffc183;
 }
 
 .spl{
     background-color:#175594;
 }
 
-.digit:hover{
-    background-color: #123c3c;
+.spl:active{
+    background-color:#6d8dae;
 }
 
-.spl:hover{
-    background-color:#0c2e50;
+
+.operator {
+    background-color: #be6812;
 }
 
-.operator:hover{
-    background-color: #7a420a;
+.operator:focus {
+    background-color:#ffc183;
 }
