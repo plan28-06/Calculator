@@ -4,7 +4,7 @@
 
 For a live preview please visit [__Calculator__](https://plan28-06.github.io/Calculator/)
 
-## Purpose
+## Aim
 
 This is a on-screen calculator made using HTML, CSS and Javascirpt.
 
